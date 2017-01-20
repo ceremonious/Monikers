@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<script src="jquery-3.1.0.min.js"></script>
+<script src="jquery.countdown360.min.js"></script>
+<script src="monikers.js"></script>
+<script src="display.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<div id="container">
+	<div id="navbar">
+		Monikers
+		<ul class="navitem">
+			<li onclick="pause()">Pause</li>
+			<li onclick="restart()">Restart</li>
+		</ul>
+	</div>
+	<div id="cardContainer">
+		<h1>Welcome to Monikers!</h1>
+		<div>
+			<p class="numCards">Choose how many cards you would like to use (: </p>
+			<input class="numCards" type="number" id="numCardsInput" value="40"/>
+		</div>
+		<div>
+			<p class="numCards">Team 1 Name: </p>
+			<input class="numCards" type="text" id="team1Input"/>
+		</div>
+		<div>
+			<p class="numCards">Team 2 Name: </p>
+			<input class="numCards" type="text" id="team2Input"/>
+		</div>
+		<button type="button" onClick="startTurn()" id="startButton"><p>Start Round</p></button>
+	</div>
+	<div id="buttonContainer">
+		<img id="undoButton" src="res/undo.png" onclick="undo()"></img>
+		<div id="correctButton" onclick="correct()"><p>Got it!</p></div>
+		<div id="passButton" onclick="pass()"><p>Pass!</p></div>
+	</div>
+</div>
+
+</body>
+</html>
