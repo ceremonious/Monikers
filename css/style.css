@@ -1,0 +1,182 @@
+body {
+	margin: 0;
+}
+
+#navbar {
+	height: 5%;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#container {
+	height: 99.85vh;
+}
+
+#header {
+	position: relative;
+	height: 16%;
+	background: #27AEE1;
+
+}
+
+#correctCount {
+	width: 20%;
+    height: 100%;
+	background: green;
+	border-radius: 0 0 100px 0;
+    -moz-border-radius: 0 0 100px 0;
+    -webkit-border-radius: 0 0 100px 0;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#passCount {
+	width: 20%;
+    height: 100%;
+	background: red;
+	border-radius: 0 0 0 100px;
+    -moz-border-radius: 0 0 0 100px;
+    -webkit-border-radius: 0 0 0 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#timer {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#deckCount {
+	height: 50%;
+	width: 50%;
+	margin: 0 auto;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#cardContainer {
+	height: 95%;
+	width: auto;
+	position: relative;
+	background: #27AEE1;/*#99e6ff;*/
+}
+
+#card {
+	height: 80%;
+	margin: auto;
+	display: block;
+}
+
+#buttonContainer {
+	display: none;
+	height: 20%;
+	width: 100%;
+	position: relative;
+	background: #27AEE1;/*#99e6ff;*/
+}
+
+#correctButton {
+	width: 50%;
+	height: 40%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: green;
+	text-align: center;
+	background: -webkit-linear-gradient(#29a329, #2eb82e); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#29a329, #2eb82e)/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#29a329, #2eb82e)/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#29a329, #2eb82e)/* Standard syntax */
+}
+
+#passButton {
+	width: 50%;
+	height: 40%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: red;
+	text-align: center;
+	background: -webkit-linear-gradient(#cc0000, #ff1a1a); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#cc0000, #ff1a1a)/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#cc0000, #ff1a1a)/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#cc0000, #ff1a1a)/* Standard syntax */
+}
+
+#undoButton {
+	width: auto;
+	height: 30%;
+	margin: auto;
+	display: block;
+	padding-top: 20px;
+}
+
+#buttonContainer div p {
+	color: white;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#cardContainer p, h1, div {
+
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+.numCards {
+	display: inline;
+}
+
+
+#startButton {
+    width: 160px;
+	height: 40px;
+    background: #8e44ad;
+    border: none;
+    border-radius: 50px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    cursor: pointer;
+}
+
+#startButton p {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    max-height: 40px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+li {
+	display: inline-block;
+	width: 60px;
+}
+
+li:hover {
+	text-decoration: underline;
+}
+
+ul {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
