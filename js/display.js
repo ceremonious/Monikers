@@ -18,7 +18,7 @@ $('document').ready(function(){
 	var webkit = !!ua.match(/WebKit/i);
 	var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
 	if(iOSSafari) {
-		$("#container").height("90vh")
+		$("#container").height("85vh")
 	}
 
 	if(localStorage.getItem("deck") != null) {
