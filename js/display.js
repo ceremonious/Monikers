@@ -12,6 +12,14 @@ var timer;
 var timeWhenTurnEnded;
 
 $('document').ready(function(){
+
+	var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
+	var webkit = !!ua.match(/WebKit/i);
+	var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
+	if(iOSSafari) {
+		$("#container").height("90vh")
+	}
+
 	if(localStorage.getItem("deck") != null) {
 		game = new Game(parseInt(localStorage.getItem("cardNum")), 3, localStorage.getItem("blueName"), localStorage.getItem("redName"));
 		game.restoreState();
