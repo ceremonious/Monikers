@@ -188,7 +188,7 @@ function gameOver() {
 }
 
 function cardToImg(card) {
-	return "res/card" + card + ".png"
+	return "smallcards/card" + card + ".png"
 }
 
 function pause() {
