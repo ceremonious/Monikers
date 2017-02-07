@@ -14,7 +14,8 @@ body {
 }
 
 #container {
-	height: 95.85vh;
+	height: 99.85vh;
+	margin: 0;
 }
 
 /** 
