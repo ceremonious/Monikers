@@ -165,12 +165,9 @@ body {
     background: #8e44ad;
     border: none;
     border-radius: 50px;
-	position: absolute;
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	left: 0;
-	right: 0;
-	bottom: 30px;
     cursor: pointer;
 }
 
