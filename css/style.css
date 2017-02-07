@@ -22,7 +22,7 @@ body {
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
   #container {
-    height: 900px;
+    height: 910px;
   }
 }
 
@@ -31,7 +31,7 @@ body {
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
   #container {
-    height: 660px;
+    height: 655px;
   }
 }
 
