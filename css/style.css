@@ -15,7 +15,6 @@ body {
 
 #container {
 	height: 99.85vh;
-	margin: 0;
 }
 
 /** 
@@ -171,7 +170,7 @@ body {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 30px;
     cursor: pointer;
 }
 
