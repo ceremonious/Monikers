@@ -17,6 +17,24 @@ body {
 	height: 99.85vh;
 }
 
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  #container {
+    height: 1024px;
+  }
+}
+
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  #container {
+    height: 768px;
+  }
+}
+
 #header {
 	position: relative;
 	height: 16%;
