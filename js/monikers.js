@@ -163,7 +163,7 @@ function Game(cardNum, numRounds, team1Name, team2Name) {
 		else
 			this.currentTurn = (Math.random() < 0.5) ? 1 : -1
 	}
-	this.storeState = function(currentPhase) {
+	/*this.storeState = function(currentPhase) {
 		localStorage.setItem("deck", this.deck.toString());
 		localStorage.setItem("bluePile", this.bluePile.toString());
 		localStorage.setItem("redPile", this.redPile.toString());
@@ -206,6 +206,6 @@ function Game(cardNum, numRounds, team1Name, team2Name) {
 		localStorage.removeItem("cardsJustGotten");
 		localStorage.removeItem("cardsJustPassed");
 		localStorage.removeItem("currentPhase");
-	}
+	}*/
 } 
 
