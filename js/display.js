@@ -21,7 +21,7 @@ $('document').ready(function(){
 		$("#container").height("85vh")
 	}
 
-	/*if(localStorage.getItem("deck") != null) {
+	if(localStorage.getItem("deck") != null) {
 		game = new Game(parseInt(localStorage.getItem("cardNum")), 3, localStorage.getItem("blueName"), localStorage.getItem("redName"));
 		game.restoreState();
 		if(localStorage.getItem("currentPhase") == "newround")
@@ -30,7 +30,7 @@ $('document').ready(function(){
 			gameAboutToStart();
 		else
 			turnAboutToStart();	
-	}*/
+	}
 });
 
 function newGame(numCards, team1Name, team2Name) {
