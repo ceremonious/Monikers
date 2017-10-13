@@ -21,6 +21,7 @@ $('document').ready(function(){
 		$("#container").height("85vh")
 	}
 
+	//If a game is stored in localStorage, it gets restored
 	if(localStorage.getItem("deck") != null) {
 		game = new Game(parseInt(localStorage.getItem("cardNum")), 3, localStorage.getItem("blueName"), localStorage.getItem("redName"));
 		game.restoreState();
@@ -38,6 +39,7 @@ function newGame(numCards, team1Name, team2Name) {
 	game.init();
 }
 
+//Gets called when the correct button is pressed
 function correct() {
 	if(game.correct()) {
 		var next = game.nextCard();
@@ -50,6 +52,7 @@ function correct() {
 	}
 }
 
+//Gets called when the pass button is pressed 
 function pass() {
 	if(game.pass()) {
 		var next = game.nextCard();
@@ -60,12 +63,13 @@ function pass() {
 	}
 }
 
+//Gets called when the undo button is pressed
 function undo() {
 	if(game.undo())
 		document.getElementById("card").src = cardToImg(game.currentCard);
 }
 
-//When this is clicked, it is either because the turn is being started or being the settings have been entered and the game is about to start
+//When this is called, it is either because the turn is being started or because the settings have been entered and the game is about to start
 function startTurn() {
 	if(game == null) {
 		var numcards = $("#numCardsInput").val();
